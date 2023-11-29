@@ -1,0 +1,35 @@
+
+.App{
+    text-align: center;
+}
+.login{
+    width: 600px;
+    height: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+}
+.home{
+    display: inline-block;
+    margin: 20px;
+}
+.links{
+    display: inline-block;
+    font-size: 33px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 20px;
+    color: white;
+    background-color: #CE8871;
+    margin: 10px;
+}
+.submit{
+    width: 50px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #CE8871;
+    color: white;
+    padding: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,3 +1,3 @@
-מקלדת
+
 מנחם אלברט ושאול טרייטל
-יש  repository נוסף של המשחק בקישור אחר
+json-server --watch db.json --port 3500

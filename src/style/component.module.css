@@ -1,35 +1,242 @@
-
-.App{
+.App {
     text-align: center;
 }
-.login{
+
+.login {
     width: 600px;
     height: 700px;
     margin-right: auto;
     margin-left: auto;
     border: 1px solid black;
+    padding-top: 30px;
+    background-color: #344C11;
 }
-.home{
+
+.home {
     display: inline-block;
     margin: 20px;
+    background-color: #778D45;
+    width: 600px;
+    height: 600px;
 }
-.links{
+
+.links {
     display: inline-block;
     font-size: 33px;
     border: 1px solid black;
     border-radius: 6px;
     padding: 20px;
     color: white;
-    background-color: #CE8871;
+    background-color: #1A2902;
     margin: 10px;
 }
-.submit{
+
+.submit {
     width: 50px;
     height: 22px;
     border-radius: 4px;
-    background-color: #CE8871;
+    background-color: #AEC09A;
     color: white;
     padding: 6px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.todosContainer {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #778d454d;
+}
+
+.displeyTodo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 80px;
+    border-radius: 6px;
+    color: white;
+    background-color: #778D45;
+}
+
+.taskNumber {
+    background-color: #8d457577;
+}
+
+.inputName,
+.inputPassword {
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+    border-radius: 6px;
+    background-color: #AEC09A;
+
+}
+
+.checkbox {
+    margin-right: 0;
+}
+
+.buttonsTodo {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #778D45;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.todoContainer {
+    align-items: center;
+    display: flex;
+}
+
+.select {
+    display: inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #a37698;
+    align-items: center;
+
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+
+
+}
+
+.upDate {
+    width: 50px;
+    height: 20px;
+}
+
+.upDateTodo {
+    height: 65px;
+    width: 360px;
+    background-color: #a37698a1;
+    border-radius: 6px;
+    font-size: 30px;
+    color: white;
+    align-items: center;
+
+}
+
+.select {
+    width: 300px;
+    height: 40px;
+    background-color: #a37698;
+    align-items: center;
+
+    text-align: center;
+}
+
+.selectBy {
+    font-size: 30px;
+
+}
+
+.formUpdate {
+    display: none;
+}
+
+.addTodoButton {
+    width: 80px;
+    height: 80px;
+    background-color: #a37698;
+    display: inline-block;
+    border-radius: 6px;
+    color: white;
+    font-size: 22px;
+    justify-content: center;
+    /* margin-left: auto; */
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.addTodo,
+.search {
+
+
+    width: 630px;
+    height: 60px;
+    background-color: #a3769859;
+    text-align: center;
+    margin: 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 30px;
+}
+
+.sendNewTodo {
+    width: 60px;
+    height: 60px;
+    background-color: #a37698;
+    text-align: center;
+    margin: 6px;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post, .album {
+    background-color: #a37698;
+    height: 50px;
+    width: 600px;
+    margin: auto auto;
+    border-radius: 6px;
+    color: white;
+    
+}
+
+.postsContainer, .albumContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    background-color: #778d4523;
+    padding: 30px;
+    
+    
+}
+
+.displayBody {
+    border-radius: 3px;
+    background-color: #AEC09A;
+    padding: 30px;
+    width: 600px;
+    
+}
+
+.editPost {
+    width: 70px;
+    height: 30px;
+    background-color: #778D45;
+    padding: 6px;
 }

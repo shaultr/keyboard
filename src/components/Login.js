@@ -7,7 +7,7 @@ import * as Yup from "yup";
 export default function Login() {
     const navigate = useNavigate();
 
-    const onSubmitHadler = async (event) => {
+    const onSubmitHadler = async () => {
         let userName = document.getElementById("name").value;
         let password = document.getElementById("password").value;
         const user = await fetch(
@@ -15,12 +15,12 @@ export default function Login() {
         )
           .then((response) => response.json())
           .then((json) => {
-              const userId = json[0].id;
+              const user = json[0];
               if (json.length !== 0) {
-                  
-                  navigate(`/home/${userId}`);
+                  localStorage.setItem("currentUser", JSON.stringify(user));
+                  navigate(`/home/${user.id}`);
                 }
-                else{
+                else {
                     alert("user is not exist")
                 }
       });
@@ -28,13 +28,16 @@ export default function Login() {
 
     return (
         <div className={style.login}>
+            <h1 style={{color: "white"}}> Log In </h1>
             <form>
-                <input id='name' type='text' placeholder='name'/>
+                <input className={style.inputPassword} id='name' type='text' placeholder='name'/>
                 <br />
                 <br />
-                <input id='password' type='password' placeholder='password'/><br /><br />
+                <input className={style.inputName} id='password' type='password' placeholder='password'/><br /><br />
                 <div className={style.submit} onClick={ ()=>{onSubmitHadler()}}>Go</div>
             </form>
         </div>
     )
 }
+
+

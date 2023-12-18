@@ -18,7 +18,6 @@ function App() {
           <Route path="posts/:id" element={<Posts />} />
           <Route path="albums/:id" element={<Albums />} />
           <Route path="/*" element={<h1>404</h1>} />
-
       </Routes>
     </div>
   );
